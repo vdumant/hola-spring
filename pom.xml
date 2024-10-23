@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>mx.com.gm</groupId>
-    <artifactId>HolaSpring</artifactId>
+    <artifactId>HolaMundoThymeleaf</artifactId>
     <version>1.0</version>
-    <name>HolaSpring</name>
+    <name>HolaMundoThymeleaf</name>
     <description>Demo project for Spring Boot</description>
     <url/>
     <licenses>
@@ -42,7 +42,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
         <dependency>
