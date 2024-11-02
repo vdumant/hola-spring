@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import java.io.Serializable;
 import lombok.Data;
+import java.util.UUID;
 
 @Data
 @Entity
@@ -17,7 +18,7 @@ public class Persona implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private String idPersona;
+    private UUID idPersona;
     private String nombre;
     private String apellido;
     private String email;
