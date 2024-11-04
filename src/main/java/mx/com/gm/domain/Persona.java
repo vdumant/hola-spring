@@ -5,6 +5,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
 import java.io.Serializable;
 import lombok.Data;
 import java.util.UUID;
@@ -19,8 +21,14 @@ public class Persona implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID idPersona;
+
+    @NotEmpty
     private String nombre;
+    @NotEmpty
     private String apellido;
+    @NotEmpty
+    @Email
     private String email;
+
     private String telefono;
 }
